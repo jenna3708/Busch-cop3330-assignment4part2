@@ -1,0 +1,81 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class item{
+  - String description
+  - Boolean complete
+  - Date dueDate
+
+  getDueDate()
+  getComplete()
+  getDescription()
+
+  setDueDate()
+  setDescription()
+  setComplete()
+
+}
+
+class todolist{
+     -string title
+     -arrayList<item> items
+
+     addItem()
+     deleteItem()
+     getTitle()
+     setTitle()
+     clear()
+}
+
+class HelloController{
+
+        private Button addItemButton;
+        private Button changeTitle;
+        private Button clearListButton;
+        private Button helpButton;
+        private DatePicker picker;
+        private TextField descriptionInput;
+        private Label listTitl;
+        private Button addSubmit;
+        private Button startButton;
+        private TableView<item> table;
+        private TableColumn<item, String> Items;
+        private TableColumn<item, Date> Dates;
+        private TableColumn<item, Boolean> Status;
+        private Button changeSubmit;
+        private TextField changeInput;
+
+        onAddItemClick()
+        onAddSubmitCLick()
+        onClearListButtonClick()
+        onChangeTitleButtonClick()
+        onChangeSubmitCLick()
+        onHelpButtonClick()
+        star()
+
+
+}
+
+class HelloApplication{
+    main()
+    start()
+}
+
+class help.fxml{
+   //Displays the help screen
+}
+
+class helloview.fxml{
+   //Displays all the buttons and lists
+}
+
+helloview.fxml <|-- HelloApplication
+HelloApplication <|-- HelloController
+HelloController <|-- todolist
+HelloController <|-- item
+todolist <|-- item
+helloview.fxml <|-- help.fxml
+
+
+
+@enduml
