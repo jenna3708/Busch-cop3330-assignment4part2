@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="700.0" prefWidth="1050.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ex4pt2.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Button fx:id="startButton" mnemonicParsing="false" onAction="#start" text="Start" textFill="#a028d3" />
+   <Label fx:id="listTitl" layoutX="496.0" layoutY="187.0" text="dddd" visible="false" />
+
+    <Label fx:id="welcomeText" text="To Do List App" />
+
+    <TableView fx:id="table" prefHeight="129.0" prefWidth="439.0" visible="false">
+        <columns>
+            <TableColumn fx:id="Items" prefWidth="500.0" resizable="false" text="Items:" />
+         <TableColumn fx:id="Dates" prefWidth="120.0" resizable="false" text="Date:" />
+         <TableColumn fx:id="Status" prefWidth="100.0" resizable="false" text="Status:" />
+        </columns>
+    </TableView>
+   <Button fx:id="clearListButton" mnemonicParsing="false" onAction="#onClearListButtonClick" text="Clear List" textFill="#2539ab" visible="false" />
+   <HBox prefHeight="18.0" prefWidth="1010.0">
+      <children>
+      
+         <Button fx:id="addItemButton" mnemonicParsing="false" onAction="#onAddItemClick" text="Add Item" textFill="#a028d3" visible="false" />
+         <TextField fx:id="descriptionInput" visible="false" />
+         <DatePicker fx:id="picker" visible="false" />
+         <Button fx:id="addSubmit" mnemonicParsing="false" onAction="#onAddSubmitCLick" text="Submit" visible="false" />
+      </children>
+   </HBox>
+   <Button fx:id="helpButton" mnemonicParsing="false" onAction="#onHelpButtonClick" pickOnBounds="false" text="HELP" textFill="#ee1111" visible="false" />
+   <HBox layoutX="30.0" layoutY="459.0" prefHeight="18.0" prefWidth="1010.0">
+      <children>
+         <Button fx:id="changeTitle" mnemonicParsing="false" onAction="#onChangeTitleButtonClick" text="Change Title" textFill="#139088" visible="false" />
+         <TextField fx:id="changeInput" visible="false" />
+         <Button fx:id="changeSubmit" mnemonicParsing="false" onAction="#onChangeSubmitCLick" text="Submit" visible="false" />
+      </children>
+   </HBox>
+</VBox>

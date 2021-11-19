@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label text="Welcome to your ToDoList app!" textFill="#931cc3" />
+        <Label text="You may begin the process with pressing the start button which will launch the application." />
+        <Label text="You can then add items to your list by giving a description and due date." />
+        <Label text="Once you have added an item it will appear on the main screen and you can keep track of all your items on it." />
+        <Label text="The clear list button will clear all the items on your list." />
+        <Label text="Finally, if you would like to add a title to your list or change it at any point" />
+        <Label text="you may do so by pressing thechange title button and submitting a new title." />
+      <Label layoutX="106.0" layoutY="253.0" text="I hope you enjoy the app! Remember to press help if you need to see this again!" />
+    </children>
+</VBox>
